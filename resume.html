@@ -8,36 +8,50 @@
     <style>
 
         .link{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             background:rebeccapurple;
             height: 100px;
         }
-
         .link ul{
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
+            gap: 10px;
+            list-style: none;
         }
-        .link a {
+        .link ul li{
+            padding: 10px 20px;
+            border:1px solid black;
+        }
+
+        .link ul li a{
             text-decoration: none;
-            color: black;
-            padding: 10px;
+            color: white;
         }
-        .link li {
-            list-style-type: none;
+
+        .link ul li:hover{
+            background: #333;
+        }
+
+        .search.bar input{
+            padding: 10px 20px;
+            font-size: 15px;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="logo">
+    <!-- <div class="logo">
         <img src="./logo.png" alt="logo" width="70px">
-    </div>
-    <div style="text-align: center; background-color: rgb(211, 201, 201);">
+    </div> -->
+    <!-- <div style="text-align: center; background-color: rgb(211, 201, 201);">
         <h1 style="border: 2px solid black;"><span style="color: rgb(137, 9, 9);">Raj</span> Kumar</h1>
-    </div>
+    </div> -->
     <div class="link">
+        <div>
+            <h1><span style="color: rgb(139, 139, 139);">Raj</span> Kumar</h1>
+        </div>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
